@@ -14,7 +14,7 @@
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');
-    fetch("https://script.google.com/macros/s/AKfycbw4QK40G9LTfeHbylyUnzJ9lPqLH-vJcHtWI1k2Lyx7WqmxtIWqoe_pECbKdgHc1MSbzw/exec') // ganti URL ini
+    fetch("https://script.google.com/macros/s/AKfycbySrcjE6mCrglQEmRLrPqv7S-leLpKNIHz4euZsTmbo34V6i25-WUdgPnj0fkFF0aDC-Q/exec') // ganti URL ini
       .then(res => res.json())
       .then(data => {
         const aset = data.find(d => d['Kode Aset'] === id);
