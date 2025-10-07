@@ -14,7 +14,8 @@
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');
-    fetch('https://script.google.com/macros/s/AKfycbw4QK40G9LTfeHbylyUnzJ9lPqLH-vJcHtWI1k2Lyx7WqmxtIWqoe_pECbKdgHc1MSbzw/exec') // ganti URL ini
+    fetch('https://docs.google.com/spreadsheets/d/1XDYRhoVCnXPAD-CmzciBTtSOdesa6VNAVJkUCI2REMY/gviz/tq?tqx=out:json&sheet=Data%20Aset%20Utama
+') // ganti URL ini
       .then(res => res.json())
       .then(data => {
         const aset = data.find(d => d['Kode Aset'] === id);
